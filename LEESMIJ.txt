@@ -1,0 +1,23 @@
+VIKTORS FOSSIELENKAST — HOE PAS IK DE WEBSITE AAN?
+==================================================
+OPENEN: pak de ZIP volledig uit en open index.html. Bewerken in Visual Studio Code.
+
+TEKST AANPASSEN
+  Elke HTML-pagina is ingedeeld met commentaarblokken, bv.
+    <!-- ===== HET STUK ZELF (witte achtergrond) ===== -->
+  Tandenplaat & eigen vondsten: uitleg staat in <div class="info-bron" id="...">.
+  Tijdlijn: elke periode heeft een blok <!-- ===== PERIODE: JURA ===== -->
+  met de evolutiestap, een lijstje "wat leefde er" en links naar je stukken.
+
+PUNT OP DE TANDENPLAAT VERPLAATSEN
+  tandenplaat.html: style="left:50%; top:49%" -> procenten aanpassen.
+
+KLEUREN: bovenaan css/style.css. Sectie wit maken: class="wit".
+
+FOTO'S
+  images/objecten/   foto's van je stukken
+  images/tanden/     de 10 zelf gevonden tanden
+  images/sfeer/      AI-sfeerbeelden (tijdperken + stukken)
+  Vervang een foto door een nieuwe met dezelfde naam = klaar.
+
+ONLINE ZETTEN (GitHub Pages): zet de INHOUD van deze map in de hoofdmap van je repository.

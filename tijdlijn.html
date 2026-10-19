@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tijdlijn | Viktors Fossielenkast</title>
+  <meta name="description" content="De evolutie van het leven: interactieve geologische tijdlijn.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="tijdlijn-pagina">
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- Achtergrondbeelden van de tijdlijn (wisselen bij het scrollen) -->
+  <div class="tijd-achtergrond" aria-hidden="true">
+    <img src="images/sfeer/cambrium.jpg" alt="" data-periode="cambrium" class="actief">
+    <img src="images/sfeer/ordovicium.jpg" alt="" data-periode="ordovicium">
+    <img src="images/sfeer/siluur.jpg" alt="" data-periode="siluur">
+    <img src="images/sfeer/devoon.jpg" alt="" data-periode="devoon">
+    <img src="images/sfeer/carboon.jpg" alt="" data-periode="carboon">
+    <img src="images/sfeer/perm.jpg" alt="" data-periode="perm">
+    <img src="images/sfeer/trias.jpg" alt="" data-periode="trias">
+    <img src="images/sfeer/jura.jpg" alt="" data-periode="jura">
+    <img src="images/sfeer/krijt.jpg" alt="" data-periode="krijt">
+    <img src="images/sfeer/paleogeen.jpg" alt="" data-periode="paleogeen">
+    <img src="images/sfeer/neogeen.jpg" alt="" data-periode="neogeen">
+    <img src="images/sfeer/kwartair.jpg" alt="" data-periode="kwartair">
+  </div>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+        <a href="tijdlijn.html" aria-current="page">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== INLEIDING & TIJDMACHINE ===== -->
+    <section style="padding-bottom:20px">
+      <div class="wrap">
+        <span class="label">539 miljoen jaar evolutie</span>
+        <h1>Van zee naar land</h1>
+        <p style="max-width:680px;color:#ddd">
+          Scroll naar beneden en volg de evolutie van het leven: eerst alleen in zee, dan de eerste
+          planten en dieren op het land, de dinosaurussen en ten slotte de zoogdieren en de mens.
+          In elk tijdperk zie je welke stukken uit mijn kast erbij horen.
+        </p>
+
+        <!-- Evolutie in zes stappen (klikbaar) -->
+        <nav class="evolutie" aria-label="Evolutie in zes stappen">
+          <a href="#cambrium"><strong>1. Zee</strong>Eerste dieren</a>
+          <a href="#siluur"><strong>2. Land</strong>Planten & geleedpotigen</a>
+          <a href="#devoon"><strong>3. Poten</strong>Eerste viervoeters</a>
+          <a href="#carboon"><strong>4. Eieren</strong>Reptielen</a>
+          <a href="#trias"><strong>5. Dino’s</strong>Trias–Krijt</a>
+          <a href="#paleogeen"><strong>6. Zoogdieren</strong>Tot de mens</a>
+        </nav>
+
+        <div class="tijdmachine" style="margin-top:30px">
+          <label for="tijdschuif" class="klein">Sleep van 538,8 miljoen jaar geleden tot vandaag</label>
+          <input id="tijdschuif" type="range" min="0" max="5388" value="0">
+          <div class="schaal"><span>538,8 Ma</span><span>Vandaag</span></div>
+          <div class="periodes" id="periode-knoppen" aria-label="Kies een periode"></div>
+          <div aria-live="polite">
+            <div class="leeftijd" id="tm-leeftijd"></div>
+            <h2 id="tm-naam" style="margin:6px 0"></h2>
+            <p id="tm-tekst" style="color:#ddd"></p>
+          </div>
+          <div class="knoppen" style="margin-top:10px">
+            <button class="knop lijn" id="tm-speel" type="button">▶ Speel af</button>
+            <a class="knop" id="tm-link" href="#cambrium">Ga naar de periode ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PERIODE: CAMBRIUM ===== -->
+    <section class="periode-blok" id="cambrium" data-naam="Cambrium" data-start="538.8" data-einde="485.4" data-kort="Leven alleen in zee: Een explosie van dierlijk leven in zee. Het land is nog kaal en leeg.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 538,8–485,4 miljoen jaar geleden</span>
+          <h2>Cambrium</h2>
+          <span class="stap">Evolutie: Leven alleen in zee</span>
+          <p>Een explosie van dierlijk leven in zee. Het land is nog kaal en leeg.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Bijna alle grote diergroepen verschijnen in korte tijd: de “Cambrische explosie”.</li>
+            <li>Trilobieten kruipen over de bodem; Anomalocaris is een van de eerste grote roofdieren.</li>
+            <li>Sponzen vormen al riffen. Ze bestonden zelfs al vóór het Cambrium.</li>
+            <li>Ogen, schalen en pantsers ontstaan: jagen en verdedigen begint.</li>
+          </ul>
+          <a class="in-kast" href="zeespons.html">
+            <img src="images/objecten/zeespons.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Natuurlijke zeespons →</strong></span>
+          </a>
+          <a class="in-kast" href="trilobiet.html">
+            <img src="images/objecten/trilobiet-voor.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Trilobiet uit het Atlasgebergte →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: ORDOVICIUM ===== -->
+    <section class="periode-blok" id="ordovicium" data-naam="Ordovicium" data-start="485.4" data-einde="443.8" data-kort="De eerste vissen: De zeeën worden voller: riffen, zeelelies en de eerste vissen zonder kaken.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 485,4–443,8 miljoen jaar geleden</span>
+          <h2>Ordovicium</h2>
+          <span class="stap">Evolutie: De eerste vissen</span>
+          <p>De zeeën worden voller: riffen, zeelelies en de eerste vissen zonder kaken.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>De eerste gewervelde dieren: kaakloze, gepantserde vissen.</li>
+            <li>Lange nautiloïden met rechte schelpen zijn de grote jagers.</li>
+            <li>Op het land verschijnen de eerste mosachtige plantjes.</li>
+            <li>Het Ordovicium eindigt met een ijstijd en een grote massa-extinctie.</li>
+          </ul>
+          <a class="in-kast" href="trilobiet.html">
+            <img src="images/objecten/trilobiet-voor.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Trilobiet uit het Atlasgebergte →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: SILUUR ===== -->
+    <section class="periode-blok" id="siluur" data-naam="Siluur" data-start="443.8" data-einde="419.2" data-kort="Leven komt aan land: De eerste planten met vaatjes groeien op het land; kleine geleedpotigen volgen.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 443,8–419,2 miljoen jaar geleden</span>
+          <h2>Siluur</h2>
+          <span class="stap">Evolutie: Leven komt aan land</span>
+          <p>De eerste planten met vaatjes groeien op het land; kleine geleedpotigen volgen.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Cooksonia: een van de eerste echte landplanten, maar enkele centimeters hoog.</li>
+            <li>Duizendpoten en spinachtigen zetten de eerste stappen op het land.</li>
+            <li>In zee jagen zeeschorpioenen, sommige meer dan een meter lang.</li>
+            <li>De eerste vissen met kaken verschijnen.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: DEVOON ===== -->
+    <section class="periode-blok" id="devoon" data-naam="Devoon" data-start="419.2" data-einde="358.9" data-kort="Het eerste landdier met poten: Het tijdperk van de vissen. Sommige vissen krijgen sterke vinnen en kruipen uit het water: de eerste viervoeters.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 419,2–358,9 miljoen jaar geleden</span>
+          <h2>Devoon</h2>
+          <span class="stap">Evolutie: Het eerste landdier met poten</span>
+          <p>Het tijdperk van de vissen. Sommige vissen krijgen sterke vinnen en kruipen uit het water: de eerste viervoeters.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Vissen met vlezige vinnen, zoals Tiktaalik, kunnen op het land steunen.</li>
+            <li>Daaruit ontstaan de eerste viervoeters (tetrapoden): voorouders van alle amfibieën, reptielen, vogels en zoogdieren — ook van ons.</li>
+            <li>De eerste bossen en bomen ontstaan.</li>
+            <li>Phacops-trilobieten met grote facetogen leven in de zee boven het huidige Marokko.</li>
+          </ul>
+          <a class="in-kast" href="trilobiet.html">
+            <img src="images/objecten/trilobiet-voor.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Trilobiet uit het Atlasgebergte →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: CARBOON ===== -->
+    <section class="periode-blok" id="carboon" data-naam="Carboon" data-start="358.9" data-einde="298.9" data-kort="Amfibieën en het eerste reptielenei: Enorme moerasbossen met boomvarens. Uit dit hout ontstaat later steenkool.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 358,9–298,9 miljoen jaar geleden</span>
+          <h2>Carboon</h2>
+          <span class="stap">Evolutie: Amfibieën en het eerste reptielenei</span>
+          <p>Enorme moerasbossen met boomvarens. Uit dit hout ontstaat later steenkool.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Amfibieën worden groot en talrijk; ze moeten nog wel in het water eieren leggen.</li>
+            <li>De eerste reptielen leggen eieren met een schaal: zo kan het leven het water helemaal verlaten.</li>
+            <li>Insecten nemen het luchtruim in. Reuzenlibellen zoals Meganeura hebben 70 cm spanwijdte.</li>
+            <li>De boomvarens laten bladfossielen achter zoals Pecopteris.</li>
+          </ul>
+          <a class="in-kast" href="pecopteris.html">
+            <img src="images/objecten/pecopteris.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Varen in steen →</strong></span>
+          </a>
+          <a class="in-kast" href="bidsprinkhaan.html">
+            <img src="images/objecten/bidsprinkhaan.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Bidsprinkhaan in hars →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: PERM ===== -->
+    <section class="periode-blok" id="perm" data-naam="Perm" data-start="298.9" data-einde="251.9" data-kort="De voorouders van zoogdieren: Een droog supercontinent, Pangea. Zeilrugdieren zoals Dimetrodon zijn verre familie van de zoogdieren.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Paleozoïcum · 298,9–251,9 miljoen jaar geleden</span>
+          <h2>Perm</h2>
+          <span class="stap">Evolutie: De voorouders van zoogdieren</span>
+          <p>Een droog supercontinent, Pangea. Zeilrugdieren zoals Dimetrodon zijn verre familie van de zoogdieren.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Synapsiden zoals Dimetrodon: geen dinosaurussen, maar voorouders van de zoogdieren.</li>
+            <li>Reptielen passen zich aan de droge binnenlanden aan.</li>
+            <li>Het Perm eindigt met de grootste massa-extinctie ooit: ongeveer 90 % van de soorten in zee sterft uit.</li>
+            <li>De laatste trilobieten verdwijnen voorgoed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: TRIAS ===== -->
+    <section class="periode-blok meso" id="trias" data-naam="Trias" data-start="251.9" data-einde="201.4" data-kort="De eerste dinosaurussen: Het leven herstelt. Kleine, snelle dinosaurussen verschijnen, net als de eerste zoogdieren.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Mesozoïcum · 251,9–201,4 miljoen jaar geleden</span>
+          <h2>Trias</h2>
+          <span class="stap">Evolutie: De eerste dinosaurussen</span>
+          <p>Het leven herstelt. Kleine, snelle dinosaurussen verschijnen, net als de eerste zoogdieren.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>De eerste dinosaurussen zijn klein en lopen op twee poten.</li>
+            <li>De eerste echte zoogdieren: kleine, nachtactieve diertjes.</li>
+            <li>Krokodilachtige reptielen zijn in deze tijd de grootste roofdieren.</li>
+            <li>In zee ontstaan zeereptielen zoals ichthyosauriërs.</li>
+          </ul>
+          <details class="dino">
+            <summary>Dinosaurus: Coelophysis</summary>
+            <span class="chip">Laat-Trias · 2–3 m · vleeseter</span>
+            <p>Een kleine, snelle tweevoeter met holle botten en scherpe tandjes; een van de best bekende vroege dinosaurussen.</p>
+            <a class="klein" href="https://www.nhm.ac.uk/discover/dino-directory/coelophysis.html" target="_blank" rel="noopener">Meer bij het Natural History Museum →</a>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: JURA ===== -->
+    <section class="periode-blok meso" id="jura" data-naam="Jura" data-start="201.4" data-einde="145" data-kort="Reuzen en de eerste vogels: Dinosaurussen worden reuzen. De zeeën zitten vol ammonieten.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Mesozoïcum · 201,4–145 miljoen jaar geleden</span>
+          <h2>Jura</h2>
+          <span class="stap">Evolutie: Reuzen en de eerste vogels</span>
+          <p>Dinosaurussen worden reuzen. De zeeën zitten vol ammonieten.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Langnekken zoals Diplodocus worden de grootste landdieren ooit.</li>
+            <li>De eerste vogels ontstaan uit kleine gevederde dinosaurussen (Archaeopteryx).</li>
+            <li>Ammonieten en belemnieten zijn overal in de zee.</li>
+            <li>Zoogdieren blijven klein en leven in de schaduw van de dinosaurussen.</li>
+          </ul>
+          <a class="in-kast" href="ammoniet.html">
+            <img src="images/objecten/ammoniet.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Ammoniet uit Madagaskar →</strong></span>
+          </a>
+          <details class="dino">
+            <summary>Dinosaurus: Stegosaurus</summary>
+            <span class="chip">Laat-Jura · tot 9 m · planteneter</span>
+            <p>Herkenbaar aan de grote rugplaten en de stekels op de staart.</p>
+            <a class="klein" href="https://www.nhm.ac.uk/discover/dino-directory/stegosaurus.html" target="_blank" rel="noopener">Meer bij het Natural History Museum →</a>
+          </details>
+          <details class="dino">
+            <summary>Dinosaurus: Diplodocus</summary>
+            <span class="chip">Laat-Jura · ca. 26 m · planteneter</span>
+            <p>Een langnek met een zweepachtige staart, die met pinvormige tanden bladeren van takken harkte.</p>
+            <a class="klein" href="https://www.nhm.ac.uk/discover/dino-directory/diplodocus.html" target="_blank" rel="noopener">Meer bij het Natural History Museum →</a>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: KRIJT ===== -->
+    <section class="periode-blok meso" id="krijt" data-naam="Krijt" data-start="145" data-einde="66" data-kort="Bloemen, mosasauriërs en het einde: De eerste bloemen bloeien. Mosasauriërs heersen in zee, T. rex op het land. Een inslag maakt er een einde aan.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Mesozoïcum · 145–66 miljoen jaar geleden</span>
+          <h2>Krijt</h2>
+          <span class="stap">Evolutie: Bloemen, mosasauriërs en het einde</span>
+          <p>De eerste bloemen bloeien. Mosasauriërs heersen in zee, T. rex op het land. Een inslag maakt er een einde aan.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Bloeiende planten verspreiden zich, samen met bijen en andere insecten.</li>
+            <li>Mosasauriërs worden de toproofdieren van de zee.</li>
+            <li>T. rex en Triceratops leven aan het einde van het Krijt.</li>
+            <li>66 miljoen jaar geleden: een planetoïde slaat in. De dinosaurussen sterven uit — behalve de vogels.</li>
+          </ul>
+          <a class="in-kast" href="mosasaurus-matrix.html">
+            <img src="images/objecten/mosasaurus-matrix.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Mosasaurustand in matrix →</strong></span>
+          </a>
+          <a class="in-kast" href="struisvogelei.html">
+            <img src="images/objecten/struisvogelei.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Struisvogelei →</strong></span>
+          </a>
+          <details class="dino">
+            <summary>Dinosaurus: Tyrannosaurus rex</summary>
+            <span class="chip">Laat-Krijt · 68–66 Ma · ca. 12 m · vleeseter</span>
+            <p>Een van de laatste grote roofdinosaurussen, met een enorme beetkracht. T. rex leefde dichter bij onze tijd dan bij Stegosaurus.</p>
+            <a class="klein" href="https://www.nhm.ac.uk/discover/dino-directory/tyrannosaurus.html" target="_blank" rel="noopener">Meer bij het Natural History Museum →</a>
+          </details>
+          <details class="dino">
+            <summary>Dinosaurus: Triceratops</summary>
+            <span class="chip">Laat-Krijt · 68–66 Ma · tot 9 m · planteneter</span>
+            <p>Drie hoorns, een grote nekkraag en een snavel. Leefde in dezelfde tijd en streek als T. rex.</p>
+            <a class="klein" href="https://www.nhm.ac.uk/discover/dino-directory/triceratops.html" target="_blank" rel="noopener">Meer bij het Natural History Museum →</a>
+          </details>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: PALEOGEEN ===== -->
+    <section class="periode-blok" id="paleogeen" data-naam="Paleogeen" data-start="66" data-einde="23.03" data-kort="De tijd van de zoogdieren: Zonder dinosaurussen krijgen zoogdieren hun kans. Het is warm; in ondiepe zeeën jagen haaien.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Cenozoïcum · 66–23,03 miljoen jaar geleden</span>
+          <h2>Paleogeen</h2>
+          <span class="stap">Evolutie: De tijd van de zoogdieren</span>
+          <p>Zonder dinosaurussen krijgen zoogdieren hun kans. Het is warm; in ondiepe zeeën jagen haaien.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Zoogdieren worden snel groter en veelzijdiger.</li>
+            <li>De eerste walvissen, paarden, katachtigen en primaten verschijnen.</li>
+            <li>Striatolamia en makoachtige haaien jagen in de zeeën: hun tanden staan op mijn tandenplaat.</li>
+            <li>Graslanden zijn er nog nauwelijks; de wereld is grotendeels bebost.</li>
+          </ul>
+          <a class="in-kast" href="tandenplaat.html">
+            <img src="images/objecten/tandenplaat.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>De tandenplaat →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: NEOGEEN ===== -->
+    <section class="periode-blok" id="neogeen" data-naam="Neogeen" data-start="23.03" data-einde="2.58" data-kort="Megalodon en graslanden: Het Mioceen: de tijd van megalodon en van de meeste haaientanden uit Cadzand en Breskens.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Cenozoïcum · 23,03–2,58 miljoen jaar geleden</span>
+          <h2>Neogeen</h2>
+          <span class="stap">Evolutie: Megalodon en graslanden</span>
+          <p>Het Mioceen: de tijd van megalodon en van de meeste haaientanden uit Cadzand en Breskens.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Megalodon jaagt op walvissen; de voorlopers van de witte haai leven ernaast.</li>
+            <li>Graslanden breiden uit; grazende dieren zoals paarden passen zich aan.</li>
+            <li>In Afrika ontstaan de eerste mensachtigen.</li>
+            <li>Het klimaat koelt langzaam af, op weg naar de ijstijden.</li>
+          </ul>
+          <a class="in-kast" href="megalodon.html">
+            <img src="images/objecten/megalodon.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Megalodontand →</strong></span>
+          </a>
+          <a class="in-kast" href="eigen-vondsten.html">
+            <img src="images/objecten/stapel-cadzand.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Mijn eigen vondsten uit Cadzand →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ===== PERIODE: KWARTAIR ===== -->
+    <section class="periode-blok" id="kwartair" data-naam="Kwartair" data-start="2.58" data-einde="0" data-kort="IJstijden en de mens: IJstijden wisselen af met warme periodes. Mammoeten en steppebizons leven naast de eerste moderne mensen.">
+      <div class="wrap">
+        <div class="periode-tekst verschijn">
+          <span class="ma">Cenozoïcum · 2,58–nu miljoen jaar geleden</span>
+          <h2>Kwartair</h2>
+          <span class="stap">Evolutie: IJstijden en de mens</span>
+          <p>IJstijden wisselen af met warme periodes. Mammoeten en steppebizons leven naast de eerste moderne mensen.</p>
+
+          <!-- Wat leefde er? -->
+          <ul class="leven">
+            <li>Wolharige mammoeten en steppebizons leven op de koude mammoetsteppe.</li>
+            <li>De moderne mens (Homo sapiens) ontstaat in Afrika en verspreidt zich over de wereld.</li>
+            <li>Pumas, hermelijnen en struisvogels zijn soorten van vandaag.</li>
+            <li>Na de laatste ijstijd verdwijnen veel grote dieren.</li>
+          </ul>
+          <a class="in-kast" href="bizon.html">
+            <img src="images/objecten/bizon-breed.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Dijbeen van een ijstijdse bizon →</strong></span>
+          </a>
+          <a class="in-kast" href="pumatand.html">
+            <img src="images/objecten/pumatand.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Tand van een puma →</strong></span>
+          </a>
+          <a class="in-kast" href="hermelijn.html">
+            <img src="images/objecten/hermelijn.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Schedel van een hermelijn →</strong></span>
+          </a>
+          <a class="in-kast" href="krokodil.html">
+            <img src="images/objecten/krokodil.jpg" alt="">
+            <span><span class="klein">In mijn kast</span><br><strong>Schedel van een jonge nijlkrokodil →</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bronvermelding -->
+    <section style="padding:30px 0">
+      <div class="wrap">
+        <p class="klein" style="background:rgba(0,0,0,.7);padding:14px;border-radius:6px">
+          Tijdgrenzen afgerond volgens de <a href="https://stratigraphy.org/chart/" target="_blank" rel="noopener">ICS-tijdschaal</a>.
+          De sfeerbeelden zijn AI-illustraties, gemaakt met Microsoft Copilot. Het zijn geen wetenschappelijke reconstructies.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+  <script src="js/tijdlijn.js"></script>
+</body>
+</html>

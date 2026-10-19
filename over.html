@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Over | Viktors Fossielenkast</title>
+  <meta name="description" content="Over Viktors fossielenkast en bronnen.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
+    <section class="hero klein-hero">
+      <img src="images/objecten/volledige-kast.jpg" alt="De volledige vitrinekast">
+      <div class="wrap">
+        <div class="kruimel"><a href="index.html">Home</a> / Over</div>
+        <span class="label">Over de collectie</span>
+        <h1>Over mijn kast</h1>
+        <p>
+          Hoe de kast is opgebouwd en waar de informatie vandaan komt.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== DE KAST (wit) ===== -->
+    <section class="wit">
+      <div class="wrap split">
+        <img class="zoom" src="images/objecten/volledige-kast.jpg" alt="De volledige vitrinekast">
+        <div>
+          <span class="label">De kast</span>
+          <h2>Een verzameling die groeit</h2>
+          <p>
+            Op de bovenste plank staan de fossielen. Daaronder kristallen, mineralen, de meteoriet en
+            natuurhistorische stukken zoals het struisvogelei en de hermelijnschedel.
+          </p>
+          <p class="zacht">
+            Herkomstgegevens komen van mij of van de verkoper. Waar een soort of ouderdom niet vaststaat,
+            staat dat er eerlijk bij.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRONNEN (zwart) ===== -->
+    <section>
+      <div class="wrap">
+        <h2>Bronnen &amp; beelden</h2>
+        <p class="zacht">
+          Alle collectiefoto’s zijn mijn eigen foto’s. De sfeerbeelden, dierillustraties en het logo
+          zijn gemaakt met Microsoft Copilot.
+        </p>
+        <p class="bronnen">
+          Achtergrondinformatie onder meer van:
+          <a href="https://stratigraphy.org/chart/" target="_blank" rel="noopener">ICS-tijdschaal</a> ·
+          <a href="https://www.nhm.ac.uk/discover/dino-directory.html" target="_blank" rel="noopener">Natural History Museum</a> ·
+          <a href="https://www.lpi.usra.edu/meteor/metbull.cfm?code=57354" target="_blank" rel="noopener">Meteoritical Bulletin</a> ·
+          <a href="https://en.wikipedia.org/wiki/Prognathodon" target="_blank" rel="noopener">Prognathodon</a> ·
+          <a href="https://en.wikipedia.org/wiki/Hawthorn_Group" target="_blank" rel="noopener">Hawthorn Group</a> ·
+          <a href="https://www.fossilguy.com/topics/morocco-phosphate/index.htm" target="_blank" rel="noopener">Fossilguy</a> ·
+          <a href="https://www.mindat.org" target="_blank" rel="noopener">Mindat</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

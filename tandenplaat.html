@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>De tandenplaat | Viktors Fossielenkast</title>
+  <meta name="description" content="Interactieve tandenplaat met haaientanden uit Cadzand en Breskens.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html" aria-current="page">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
+    <section class="hero klein-hero laag">
+      <img src="images/sfeer/obj-zandtijger.jpg" alt="Sfeerbeeld: een zandtijgerhaai">
+      <div class="wrap">
+        <div class="kruimel"><a href="index.html">Home</a> / Tandenplaat</div>
+        <span class="label">Interactief</span>
+        <h1>De tandenplaat</h1>
+        <p>
+          Meer dan tweehonderd haaientanden uit Cadzand en Breskens, gesorteerd in vier groepen. Beweeg met je muis over de plaat of tik erop.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== INTERACTIEVE PLAAT (wit) ===== -->
+    <section class="wit">
+      <div class="wrap plaat-layout" data-verkenner>
+
+        <!-- De foto met zones (per groep) en punten -->
+        <div>
+          <div class="plaat">
+            <img src="images/objecten/tandenplaat.jpg" alt="Plaat met haaientanden in vier groepen">
+
+            <!-- Zone: Striatolamia / zandtijgerhaai -->
+            <button class="zone" style="left:0%; width:31%" data-info="groep-striatolamia" aria-label="Striatolamia / zandtijgerhaai"></button>
+
+            <!-- Zone: Mako- / Lamnidae-achtigen -->
+            <button class="zone" style="left:31%; width:27%" data-info="groep-mako" aria-label="Mako- / Lamnidae-achtigen"></button>
+
+            <!-- Zone: Carcharhinidae — requiemhaaien -->
+            <button class="zone" style="left:58%; width:22%" data-info="groep-carcharhinidae" aria-label="Carcharhinidae — requiemhaaien"></button>
+
+            <!-- Zone: Lamnidae / hastalis -->
+            <button class="zone" style="left:80%; width:20%" data-info="groep-lamnidae" aria-label="Lamnidae / hastalis"></button>
+
+            <!-- Punt 1: Moderne tand: zandtijgerhaai -->
+            <button class="punt" style="left:13.5%; top:53%" data-info="modern-zandtijger" aria-label="Moderne tand: zandtijgerhaai">1</button>
+
+            <!-- Punt 2: Moderne tand: Lamnidae (1) -->
+            <button class="punt" style="left:45.6%; top:58%" data-info="modern-lamnidae-1" aria-label="Moderne tand: Lamnidae (1)">2</button>
+
+            <!-- Punt 3: Moderne tand: Lamnidae (2) -->
+            <button class="punt" style="left:53.8%; top:58%" data-info="modern-lamnidae-2" aria-label="Moderne tand: Lamnidae (2)">3</button>
+
+            <!-- Punt 4: Moderne tand: requiemhaai -->
+            <button class="punt" style="left:68.5%; top:52%" data-info="modern-requiem" aria-label="Moderne tand: requiemhaai">4</button>
+
+            <!-- Punt 5: Grote tanden van C. hastalis -->
+            <button class="punt" style="left:88%; top:25%" data-info="extra-groot" aria-label="Grote tanden van C. hastalis">5</button>
+
+          </div>
+          <p class="klein" style="margin-top:12px">Blauwe vlakken = de vier groepen · Punten 1–4 = moderne tanden van nog levende haaien · Punt 5 = de grootste fossiele tanden.</p>
+        </div>
+
+        <!-- Hier verschijnt de uitleg -->
+        <aside class="infopaneel" data-paneel aria-live="polite">
+          <span class="label">Tip</span>
+          <h3>Beweeg over de plaat</h3>
+          <p class="zacht">Elke kolom is een groep fossiele haaien. De vier lichte tanden in het midden (punten 1–4) zijn van haaien die nu nog leven, uit dezelfde familie als de fossielen eromheen.</p>
+        </aside>
+
+        <!-- Verborgen teksten (verschijnen in het paneel) -->
+        <!-- Tekst voor: Striatolamia / zandtijgerhaai -->
+        <div class="info-bron" id="groep-striatolamia">
+          <span class="label">Eoceen · ca. 56–34 miljoen jaar</span>
+          <h3>Striatolamia / zandtijgerhaai</h3>
+          <p class="zacht"><em>Striatolamia</em> is een uitgestorven verwant van de zandtijgerhaai. De slanke, lange tanden hebben vaak fijne streepjes aan de binnenkant; daar komt de naam vandaan (“gestreepte <em>Lamia</em>”). Het waren snelle jagers op vis.</p>
+        </div>
+
+        <!-- Tekst voor: Mako- / Lamnidae-achtigen -->
+        <div class="info-bron" id="groep-mako">
+          <span class="label">Eoceen · ca. 56–34 miljoen jaar</span>
+          <h3>Mako- / Lamnidae-achtigen</h3>
+          <p class="zacht">Tanden van makoachtige haaien: driehoekig tot slank, glad en zonder kartels, met een duidelijke wortel. Lamnidae is de familie van de makohaai en de witte haai.</p>
+        </div>
+
+        <!-- Tekst voor: Carcharhinidae — requiemhaaien -->
+        <div class="info-bron" id="groep-carcharhinidae">
+          <span class="label">Mioceen tot Plioceen · ca. 23–2,6 miljoen jaar</span>
+          <h3>Carcharhinidae — requiemhaaien</h3>
+          <p class="zacht">De requiemhaaien zijn een moderne familie, met onder meer de zwartpunthaai, de stierhaai en de tijgerhaai. Hun tanden zijn vaak klein, met een brede wortel en een smalle of licht gekartelde kroon.</p>
+        </div>
+
+        <!-- Tekst voor: Lamnidae / hastalis -->
+        <div class="info-bron" id="groep-lamnidae">
+          <span class="label">Mioceen tot Plioceen · ca. 23–2,6 miljoen jaar</span>
+          <h3>Lamnidae / hastalis</h3>
+          <p class="zacht"><em>Carcharodon hastalis</em>, de breedtandige mako, is een uitgestorven haai uit de lijn die naar de witte haai leidt. De grote donkere tanden in deze kolom zijn breed, driehoekig en glad. Het dier werd naar schatting 6–7 meter lang.</p>
+        </div>
+
+        <!-- Tekst voor: Moderne tand: zandtijgerhaai -->
+        <div class="info-bron" id="modern-zandtijger">
+          <span class="label">Recent · familie Odontaspididae</span>
+          <h3>Moderne tand: zandtijgerhaai</h3>
+          <p class="zacht">Deze witte tand komt van een haai die vandaag nog leeft, uit dezelfde groep als de fossiele <em>Striatolamia</em>-tanden eromheen: de zandtijgerhaaien. Vergelijk de slanke vorm: in miljoenen jaren is die nauwelijks veranderd.<br><br>Moderne tanden zijn wit omdat ze niet gefossiliseerd zijn. Fossiele tanden worden donker doordat mineralen uit de bodem het tandmateriaal langzaam vervangen.</p>
+        </div>
+
+        <!-- Tekst voor: Moderne tand: Lamnidae (1) -->
+        <div class="info-bron" id="modern-lamnidae-1">
+          <span class="label">Recent · familie Lamnidae</span>
+          <h3>Moderne tand: Lamnidae (1)</h3>
+          <p class="zacht">Een tand van een nu levende haai uit de makofamilie, de familie van de mako, de witte haai en de haringhaai. Hij staat tussen de fossiele mako-achtige tanden, zodat je oud en nieuw naast elkaar ziet.<br><br>Let op de kleine zijpuntjes naast de kroon: zulke punten komen voor bij de haringhaai (<em>Lamna nasus</em>). De precieze soort is nog niet bepaald.</p>
+        </div>
+
+        <!-- Tekst voor: Moderne tand: Lamnidae (2) -->
+        <div class="info-bron" id="modern-lamnidae-2">
+          <span class="label">Recent · familie Lamnidae</span>
+          <h3>Moderne tand: Lamnidae (2)</h3>
+          <p class="zacht">De tweede moderne tand uit dezelfde familie. Het bruine glazuur bovenaan is de kroon; de lichte, sponzige onderkant is de wortel, die in het tandvlees vastzat.</p>
+        </div>
+
+        <!-- Tekst voor: Moderne tand: requiemhaai -->
+        <div class="info-bron" id="modern-requiem">
+          <span class="label">Recent · familie Carcharhinidae</span>
+          <h3>Moderne tand: requiemhaai</h3>
+          <p class="zacht">Deze brede, witte tand komt van een levende requiemhaai, dezelfde familie als de kleine fossiele tanden in deze kolom. Bij grotere soorten, zoals de stierhaai, zijn de boventanden breed en driehoekig met fijn gekartelde randen.</p>
+        </div>
+
+        <!-- Tekst voor: Grote tanden van C. hastalis -->
+        <div class="info-bron" id="extra-groot">
+          <span class="label">Mioceen</span>
+          <h3>Grote tanden van <em>C. hastalis</em></h3>
+          <p class="zacht">De grootste donkere tanden van de plaat staan bovenaan in de rechterkolom. Bij Cadzand en Breskens zijn ze relatief zeldzaam, omdat grote tanden sneller breken in de branding.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ACHTERGROND (sfeerfoto strand Cadzand) ===== -->
+    <section class="hero klein-hero">
+      <img src="images/sfeer/obj-cadzand.jpg" alt="Strand van Cadzand in de schemering met haaientanden in het zand">
+      <div class="wrap">
+        <span class="label">Cadzand &amp; Breskens</span>
+        <h2>Waarom zoveel tanden?</h2>
+        <p>
+          Een haai verliest zijn hele leven lang tanden; sommige soorten duizenden. Het skelet van kraakbeen
+          vergaat, maar de harde tanden blijven bewaard. Voor de kust van Cadzand en Breskens spoelen ze aan uit
+          oude zeebodems, vooral uit het Mioceen (ongeveer 5–35 miljoen jaar oud), maar ook uit het Eoceen.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

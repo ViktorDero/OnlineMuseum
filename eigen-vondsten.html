@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eigen vondsten | Viktors Fossielenkast</title>
+  <meta name="description" content="Interactieve verkenner van zelf gevonden haaientanden uit Cadzand.">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html" aria-current="page">Eigen vondsten</a>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
+    <section class="hero klein-hero">
+      <img src="images/objecten/stapel-cadzand.jpg" alt="Een stapel zelf gevonden haaientanden uit Cadzand">
+      <div class="wrap">
+        <div class="kruimel"><a href="index.html">Home</a> / Eigen vondsten</div>
+        <span class="label">Zelf gevonden</span>
+        <h1>Mijn vondsten uit Cadzand</h1>
+        <p>
+          Deze tien haaientanden vond ik zelf op het strand van Cadzand. Beweeg met je muis over een tand, of tik erop op je smartphone.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== TANDENVERKENNER (wit) ===== -->
+    <section class="wit">
+      <div class="wrap tanden-layout" data-verkenner data-start>
+
+        <!-- De tien tanden -->
+        <div>
+          <div class="tanden">
+            <!-- Tand 1: Hemipristis serra -->
+            <button class="tand" data-info="tand-1" aria-label="Tand 1: Hemipristis serra">
+              <img src="images/tanden/tand-01.jpg" alt="">
+              <span>1</span>
+            </button>
+            <!-- Tand 2: Isurus oxyrinchus / hastalis (makohaai) -->
+            <button class="tand" data-info="tand-2" aria-label="Tand 2: Isurus oxyrinchus / hastalis (makohaai)">
+              <img src="images/tanden/tand-02.jpg" alt="">
+              <span>2</span>
+            </button>
+            <!-- Tand 3: Galeocerdo (tijgerhaai) -->
+            <button class="tand" data-info="tand-3" aria-label="Tand 3: Galeocerdo (tijgerhaai)">
+              <img src="images/tanden/tand-03.jpg" alt="">
+              <span>3</span>
+            </button>
+            <!-- Tand 4: Kleine Carcharhinus -->
+            <button class="tand" data-info="tand-4" aria-label="Tand 4: Kleine Carcharhinus">
+              <img src="images/tanden/tand-04.jpg" alt="">
+              <span>4</span>
+            </button>
+            <!-- Tand 5: Grote Isurus hastalis -->
+            <button class="tand" data-info="tand-5" aria-label="Tand 5: Grote Isurus hastalis">
+              <img src="images/tanden/tand-05.jpg" alt="">
+              <span>5</span>
+            </button>
+            <!-- Tand 6: Carcharias taurus (zandtijgerhaai) -->
+            <button class="tand" data-info="tand-6" aria-label="Tand 6: Carcharias taurus (zandtijgerhaai)">
+              <img src="images/tanden/tand-06.jpg" alt="">
+              <span>6</span>
+            </button>
+            <!-- Tand 7: Mini Carcharhinus of Squalus -->
+            <button class="tand" data-info="tand-7" aria-label="Tand 7: Mini Carcharhinus of Squalus">
+              <img src="images/tanden/tand-07.jpg" alt="">
+              <span>7</span>
+            </button>
+            <!-- Tand 8: Carcharodon hastalis (voorloper witte haai) -->
+            <button class="tand" data-info="tand-8" aria-label="Tand 8: Carcharodon hastalis (voorloper witte haai)">
+              <img src="images/tanden/tand-08.jpg" alt="">
+              <span>8</span>
+            </button>
+            <!-- Tand 9: Carcharhinus -->
+            <button class="tand" data-info="tand-9" aria-label="Tand 9: Carcharhinus">
+              <img src="images/tanden/tand-09.jpg" alt="">
+              <span>9</span>
+            </button>
+            <!-- Tand 10: Hemipristis / Galeocerdo -->
+            <button class="tand" data-info="tand-10" aria-label="Tand 10: Hemipristis / Galeocerdo">
+              <img src="images/tanden/tand-10.jpg" alt="">
+              <span>10</span>
+            </button>
+          </div>
+          <p class="klein" style="margin-top:14px">Gele bolletjes = zeldzaamheid (1 = algemeen, 3 = zeer zeldzaam).</p>
+        </div>
+
+        <!-- Hier verschijnt de uitleg -->
+        <aside class="infopaneel" data-paneel aria-live="polite"></aside>
+
+        <!-- Verborgen teksten per tand -->
+        <!-- Uitleg tand 1 -->
+        <div class="info-bron" id="tand-1">
+          <span class="label">Tand 1 van 10</span>
+          <h3><em>Hemipristis serra</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Sterk gekartelde rand, golfvormige kartels</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i class="aan"></i></span> 3/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>3–4 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 10–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Zeer zeldzaam.</p>
+        </div>
+        <!-- Uitleg tand 2 -->
+        <div class="info-bron" id="tand-2">
+          <span class="label">Tand 2 van 10</span>
+          <h3><em>Isurus oxyrinchus / hastalis (makohaai)</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Slank, glad oppervlak, geen kartels</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i></i></span> 2/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>6 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Toproofvis.</p>
+        </div>
+        <!-- Uitleg tand 3 -->
+        <div class="info-bron" id="tand-3">
+          <span class="label">Tand 3 van 10</span>
+          <h3><em>Galeocerdo (tijgerhaai)</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Dikke kroon, afgerond profiel; zijtand of gebroken</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i></i><i></i></span> 1/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>5–7 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht"></p>
+        </div>
+        <!-- Uitleg tand 4 -->
+        <div class="info-bron" id="tand-4">
+          <span class="label">Tand 4 van 10</span>
+          <h3><em>Kleine Carcharhinus</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Zeer slank, puntig</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i></i><i></i></span> 1/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>2–3 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–10 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Laterale tand. Moderne familie van de requiemhaaien.</p>
+        </div>
+        <!-- Uitleg tand 5 -->
+        <div class="info-bron" id="tand-5">
+          <span class="label">Tand 5 van 10</span>
+          <h3><em>Grote Isurus hastalis</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Brede driehoek, glad</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i class="aan"></i></span> 3/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>6 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 8–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">De zeer goede kwaliteit maakt hem zeldzaam. Laterale tand.</p>
+        </div>
+        <!-- Uitleg tand 6 -->
+        <div class="info-bron" id="tand-6">
+          <span class="label">Tand 6 van 10</span>
+          <h3><em>Carcharias taurus (zandtijgerhaai)</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Driehoekig, brede basis, scherpe punt</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i></i></span> 2/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>3–3,5 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Op het blad: stierhaai / sand tiger.</p>
+        </div>
+        <!-- Uitleg tand 7 -->
+        <div class="info-bron" id="tand-7">
+          <span class="label">Tand 7 van 10</span>
+          <h3><em>Mini Carcharhinus of Squalus</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Heel klein</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i></i><i></i></span> 1/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>1–1,5 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–10 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Vaak een zijtand uit de achterkaak.</p>
+        </div>
+        <!-- Uitleg tand 8 -->
+        <div class="info-bron" id="tand-8">
+          <span class="label">Tand 8 van 10</span>
+          <h3><em>Carcharodon hastalis (voorloper witte haai)</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Brede basis en glad blad</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i class="aan"></i></span> 3/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>6–7 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 8–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Voorloper van de witte haai; zeer zeldzame soort om te vinden.</p>
+        </div>
+        <!-- Uitleg tand 9 -->
+        <div class="info-bron" id="tand-9">
+          <span class="label">Tand 9 van 10</span>
+          <h3><em>Carcharhinus</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Smal en spits</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i></i><i></i></span> 1/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>2–3 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 5–10 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Zijtand.</p>
+        </div>
+        <!-- Uitleg tand 10 -->
+        <div class="info-bron" id="tand-10">
+          <span class="label">Tand 10 van 10</span>
+          <h3><em>Hemipristis / Galeocerdo</em></h3>
+          <dl class="feiten">
+            <div><dt>Vorm</dt><dd>Gebogen haakvorm</dd></div>
+            <div><dt>Zeldzaamheid</dt><dd><span class="zeldzaam"><i class="aan"></i><i class="aan"></i><i></i></span> 2/3</dd></div>
+            <div><dt>Grootte haai</dt><dd>3–6 m</dd></div>
+            <div><dt>Leeftijd</dt><dd>± 8–15 miljoen jaar</dd></div>
+          </dl>
+          <p class="zacht">Zijtand. Een van de laatste tanden in de kaakboog.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== ALLE VONDSTEN (zwart) ===== -->
+    <section>
+      <div class="wrap split">
+        <img class="zoom" src="images/objecten/eigen-vondsten-alle.jpg" alt="Al mijn zelf gevonden haaientanden naast elkaar">
+        <div>
+          <span class="label">De hele vondst</span>
+          <h2>Van strand naar collectie</h2>
+          <p class="zacht">
+            Losse strandtanden determineren is moeilijk: slijtage en de plaats in de kaak veranderen de vorm.
+            De meeste tanden komen uit het Mioceen. Wil je zekerheid? Neem je vondsten mee naar een
+            <a href="beurzen.html">fossielenbeurs</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
