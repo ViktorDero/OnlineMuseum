@@ -4,8 +4,8 @@
   <meta name="robots" content="noindex, nofowllow">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Enchodus | Viktors Fossielenkast</title>
-  <meta name="description" content="Enchodus tand, een diepzee vis uit het late Krijt">
+  <title>Titanosaurus Ei | Viktors Fossielenkast</title>
+  <meta name="description" content="Kleine eierschaal fragmenten van een Titanosaurus">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -40,13 +40,13 @@
 
     <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
     <section class="hero klein-hero laag">
-      <img src="images/sfeer/enchodusW2.jpg" alt="Sfeerbeeld bij Enchodus">
+      <img src="images/sfeer/enchodusW2.jpg" alt="Titanosaurus Ei">
       <div class="wrap">
-        <div class="kruimel"><a href="index.html">Home</a> / <a href="collectie.html">Collectie</a> / Enchodus</div>
+        <div class="kruimel"><a href="index.html">Home</a> / <a href="collectie.html">Collectie</a> / Titanosaurus</div>
         <span class="label">Fossielen</span>
-        <h1>Enchodus</h1>
+        <h1>Titanosaurus ei</h1>
         <p>
-          De Enchodus, een diepzee roofvis uit het late krijt. 
+          Kleine eierschaal fragmenten van een Titanosaurus.
         </p>
       </div>
     </section>
@@ -57,26 +57,26 @@
 
         <!-- Foto's: klik om te vergroten -->
         <div class="galerij">
-          <div class="hoofd zoom"><img src="images/objecten/enchodTand.jpg" alt="Enchodus"></div>
+          <div class="hoofd zoom"><img src="images/objecten/enchodTand.jpg" alt="Titanosaurus Ei"></div>
         </div>
 
         <!-- Tekst over het stuk -->
         <article>
           <dl class="feiten">
-            <div><dt>Materiaal</dt><dd>Enchodus tand</dd></div>
-            <div><dt>Herkomst</dt><dd>Ouled Abdoun (Marokko) </dd></div>
-            <div><dt>Ouderdom</dt><dd>Superior Krijt 65mil. jaar geleden</dd></div>
+            <div><dt>Materiaal</dt><dd>Kleine eierschaal fragmenten van een Titanosaurus</dd></div>
+            <div><dt>Herkomst</dt><dd>Mèze, departement Hérault, Frankrijk</dd></div>
+            <div><dt>Ouderdom</dt><dd>Boven-Krijt 72 miljoen jaar geleden</dd></div>
           </dl>
 
           <p>
-           De Enchodus is een diepzee roofvis. Hij kon tot 1.5 meter lang worden met tanden tot 6 cm lang. Het was een carnivoor die zich vooral voedde op plankton, en kleinere krijt zeedieren. De enchodus is een gekend prooidier voor grotere zee reptielen als de Mosasaurus. 
+           
           </p>
 
           <p>
-            Deze tand is verkregen in de Objets Trouvés Leuven. 
+            In 1996 werd in de omgeving van Mèze een belangrijke vindplaats met dinosaurus-eieren ontdekt door Alain Cabot.In de omgeving van Mèze zijn verschillende soorten fossiele eierschalen beschreven. Paleontologen gebruiken daarvoor een aparte classificatie, de zogenaamde oölogische classificatie.
           </p>
 
-          <div class="opmerking"><strong>Goed om te weten:</strong> De enchodus is ook gekend als de sabeltandharing </div>
+          <div class="opmerking"><strong>Goed om te weten:</strong> in april 2026 werd in Mèze opnieuw een uitzonderlijke ontdekking bekendgemaakt: ongeveer honderd fossiele dinosaurus-eieren, vermoedelijk grotendeels van titanosauriërs, met een ouderdom van circa 72 miljoen jaar. </div>
         </article>
 
       </div>
@@ -87,8 +87,8 @@
         <img class="zoom" src="images/reconstructies/enchodus.jpg" alt="" loading="lazy">
         <div>
           <span class="label">Van fossiel naar dier</span>
-          <h2>Een indruk van een Enchodus</h2>
-          <p class="zacht">illustratie bron:https://www.facebook.com/photo?fbid=122180789822475525&set=a.122128145708475525</p>
+          <h2>Een indruk van een Titanosaurus</h2>
+          <p class="zacht">illustratie</p>
         </div>
       </div>
     </section>
