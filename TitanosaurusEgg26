@@ -57,7 +57,7 @@
 
         <!-- Foto's: klik om te vergroten -->
         <div class="galerij">
-          <div class="hoofd zoom"><img src="images/objecten/TitanosaurusEi1.jpg" alt="Titanosaurus Ei"></div>
+          <div class="hoofd zoom"><img src="images/objecten/TitanosaurusEI1.jpg" alt="Titanosaurus Ei"></div>
         </div>
 
         <!-- Tekst over het stuk -->
@@ -84,7 +84,7 @@
  <!-- ===== RECONSTRUCTIE VAN HET LEVENDE DIER ===== -->
     <section>
       <div class="wrap split">
-        <img class="zoom" src="images/reconstructies/enchodus.jpg" alt="" loading="lazy">
+        <img class="zoom" src="images/reconstructies/TitanoILL.jpg" alt="" loading="lazy">
         <div>
           <span class="label">Van fossiel naar dier</span>
           <h2>Een indruk van een Titanosaurus</h2>
