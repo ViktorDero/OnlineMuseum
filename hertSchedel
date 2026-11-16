@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofowllow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hert | Viktors Fossielenkast</title>
+  <meta name="description" content="Mammoet tand">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+        <a href="VintageStenen.html">Vintage Stenen</a>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
+    <section class="hero klein-hero laag">
+      <img src="images/sfeer/hertsf.jpg" alt="Herten schedel">
+      <div class="wrap">
+        <div class="kruimel"><a href="index.html">Home</a> / <a href="collectie.html">Collectie</a> / Hert</div>
+        <span class="label">Fossielen</span>
+        <h1> Edelhert</h1>
+        <p>
+          De schedel van een edelhert
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HET STUK ZELF (witte achtergrond) ===== -->
+    <section class="wit">
+      <div class="wrap object">
+
+
+
+        <!-- Foto's: klik om te vergroten -->
+        <div class="galerij">
+          <div class="hoofd zoom"><img src="images/objecten/hert1.jpg" alt="hert"></div>
+          <div class="duimen">
+            <button aria-pressed="true" data-foto="images/objecten/hert1.jpg" data-alt="hert" aria-label="Toon foto: hert"><img src="images/objecten/hert1.jpg" alt=""></button>
+            <button aria-pressed="true" data-foto="images/objecten/hert2.jpg" data-alt="hert" aria-label="Toon foto: hert"><img src="images/objecten/hert2.jpg" alt=""></button>
+           </div>
+        </div>
+
+        <!-- Tekst over het stuk -->
+        <article>
+          <dl class="feiten">
+            <div><dt>Materiaal</dt><dd>Schedel van een edelhert</dd></div>
+            <div><dt>Herkomst</dt><dd>Belgie</dd></div>
+          </dl>
+
+          <p>
+              Het edelhert is een van de grootste hertensoorten van Europa. Het mannetje heeft een groot vertakt gewei en wordt een hert of bok genoemd; het vrouwtje heet een hinde.
+          </p>
+
+     </article>
+
+      </div>
+    </section>
+
+    <!-- ===== MEER UIT DEZE CATEGORIE ===== -->
+    <section class="wit">
+      <div class="wrap">
+        <h2>Zie ook</h2>
+        <div class="raster">
+         <!-- Kaart: Megalodontand -->
+          <article class="kaart verschijn" data-cat="Haaientanden" data-zoek="megalodontand een zwarte tand van de grootste roofhaai ooit, uit south carolina. haaientanden otodus megalodon hawthorn-formatie, colleton county, south carolina (vs) mioceen zwart door fosfaatmineralen">
+            <div class="foto"><img src="images/objecten/megalodon.jpg" alt="Zwarte megalodontand op een standaard" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Haaientanden</span>
+              <h3><a class="vol" href="megalodon.html">Megalodontand</a></h3>
+              <p>Een zwarte tand van de grootste roofhaai ooit, uit South Carolina.</p>
+            </div>
+          </article>
+          <!-- Kaart: Mosasaurustand in matrix -->
+          <article class="kaart verschijn" data-cat="Fossielen" data-zoek="mosasaurustand in matrix een krachtige tand nog in het fosfaatgesteente van oued zem, marokko. fossielen mosasauriër, waarschijnlijk prognathodon fosfaatlagen van oued zem, marokko laat-krijt (maastrichtien) ca. 72–66 miljoen jaar">
+            <div class="foto"><img src="images/objecten/mosasaurus-matrix.jpg" alt="Mosasaurustand in lichtbruin gesteente" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Fossielen</span>
+              <h3><a class="vol" href="mosasaurus-matrix.html">Mosasaurustand in matrix</a></h3>
+              <p>Een krachtige tand nog in het fosfaatgesteente van Oued Zem, Marokko.</p>
+            </div>
+          </article>
+          <!-- Kaart: Losse mosasaurustand -->
+          <article class="kaart verschijn" data-cat="Fossielen" data-zoek="losse mosasaurustand een kegelvormige tand met glanzend glazuur, uit de fosfaatlagen van oued zem. fossielen mosasauriër oued zem, marokko laat-krijt (maastrichtien) ca. 72–66 miljoen jaar">
+            <div class="foto"><img src="images/objecten/mosasaurus-tand.jpg" alt="Losse kegelvormige mosasaurustand" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Fossielen</span>
+              <h3><a class="vol" href="mosasaurus-tand.html">Losse mosasaurustand</a></h3>
+              <p>Een kegelvormige tand met glanzend glazuur, uit de fosfaatlagen van Oued Zem.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
