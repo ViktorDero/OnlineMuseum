@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta name="robots" content="noindex, nofowllow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enchodus | Viktors Fossielenkast</title>
+  <meta name="description" content="Enchodus tand, een diepzee vis uit het late Krijt">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip" href="#inhoud">Naar de inhoud</a>
+
+  <!-- =========================================================
+       NAVIGATIE (staat op elke pagina)
+       ========================================================= -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="logo" href="index.html">
+        <img src="images/logo-haaientand.png" alt="">
+        <span>Viktors Fossielenkast<small>Privécollectie natuurhistorie</small></span>
+      </a>
+      <button class="menu-knop" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav class="menu" id="menu" aria-label="Hoofdmenu">
+        <a href="index.html">Home</a>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+        <a href="VintageStenen.html">Vintage Stenen</a>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhoud">
+
+    <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
+    <section class="hero klein-hero laag">
+      <img src="images/sfeer/enchodusW2.jpg" alt="Sfeerbeeld bij Enchodus">
+      <div class="wrap">
+        <div class="kruimel"><a href="index.html">Home</a> / <a href="collectie.html">Collectie</a> / Enchodus</div>
+        <span class="label">Fossielen</span>
+        <h1>Enchodus</h1>
+        <p>
+          De Enchodus, een diepzee roofvis uit het late krijt. 
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== HET STUK ZELF (witte achtergrond) ===== -->
+    <section class="wit">
+      <div class="wrap object">
+
+        <!-- Foto's: klik om te vergroten -->
+        <div class="galerij">
+          <div class="hoofd zoom"><img src="images/objecten/enchodTand.jpg" alt="Enchodus"></div>
+        </div>
+
+        <!-- Tekst over het stuk -->
+        <article>
+          <dl class="feiten">
+            <div><dt>Materiaal</dt><dd>Enchodus tand</dd></div>
+            <div><dt>Herkomst</dt><dd>Ouled Abdoun (Marokko) </dd></div>
+            <div><dt>Ouderdom</dt><dd>Superior Krijt 65mil. jaar geleden</dd></div>
+          </dl>
+
+          <p>
+           De Enchodus is een diepzee roofvis. Hij kon tot 1.5 meter lang worden met tanden tot 6 cm lang. Het was een carnivoor die zich vooral voedde op plankton, en kleinere krijt zeedieren. De enchodus is een gekend prooidier voor grotere zee reptielen als de Mosasaurus. 
+          </p>
+
+          <p>
+            Deze tand is verkregen in de Objets Trouvés Leuven. 
+          </p>
+
+          <div class="opmerking"><strong>Goed om te weten:</strong> De enchodus is ook gekend als de sabeltandharing </div>
+        </article>
+
+      </div>
+    </section>
+ <!-- ===== RECONSTRUCTIE VAN HET LEVENDE DIER ===== -->
+    <section>
+      <div class="wrap split">
+        <img class="zoom" src="images/reconstructies/enchodus.jpg" alt="" loading="lazy">
+        <div>
+          <span class="label">Van fossiel naar dier</span>
+          <h2>Een indruk van een Enchodus</h2>
+          <p class="zacht">illustratie bron:https://www.facebook.com/photo?fbid=122180789822475525&set=a.122128145708475525</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MEER UIT DEZE CATEGORIE ===== -->
+    <section class="wit">
+      <div class="wrap">
+        <h2>Zie ook</h2>
+        <div class="raster">
+         <!-- Kaart: Megalodontand -->
+          <article class="kaart verschijn" data-cat="Haaientanden" data-zoek="megalodontand een zwarte tand van de grootste roofhaai ooit, uit south carolina. haaientanden otodus megalodon hawthorn-formatie, colleton county, south carolina (vs) mioceen zwart door fosfaatmineralen">
+            <div class="foto"><img src="images/objecten/megalodon.jpg" alt="Zwarte megalodontand op een standaard" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Haaientanden</span>
+              <h3><a class="vol" href="megalodon.html">Megalodontand</a></h3>
+              <p>Een zwarte tand van de grootste roofhaai ooit, uit South Carolina.</p>
+            </div>
+          </article>
+          <!-- Kaart: Mosasaurustand in matrix -->
+          <article class="kaart verschijn" data-cat="Fossielen" data-zoek="mosasaurustand in matrix een krachtige tand nog in het fosfaatgesteente van oued zem, marokko. fossielen mosasauriër, waarschijnlijk prognathodon fosfaatlagen van oued zem, marokko laat-krijt (maastrichtien) ca. 72–66 miljoen jaar">
+            <div class="foto"><img src="images/objecten/mosasaurus-matrix.jpg" alt="Mosasaurustand in lichtbruin gesteente" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Fossielen</span>
+              <h3><a class="vol" href="mosasaurus-matrix.html">Mosasaurustand in matrix</a></h3>
+              <p>Een krachtige tand nog in het fosfaatgesteente van Oued Zem, Marokko.</p>
+            </div>
+          </article>
+          <!-- Kaart: Losse mosasaurustand -->
+          <article class="kaart verschijn" data-cat="Fossielen" data-zoek="losse mosasaurustand een kegelvormige tand met glanzend glazuur, uit de fosfaatlagen van oued zem. fossielen mosasauriër oued zem, marokko laat-krijt (maastrichtien) ca. 72–66 miljoen jaar">
+            <div class="foto"><img src="images/objecten/mosasaurus-tand.jpg" alt="Losse kegelvormige mosasaurustand" loading="lazy"></div>
+            <div class="tekst">
+              <span class="categorie">Fossielen</span>
+              <h3><a class="vol" href="mosasaurus-tand.html">Losse mosasaurustand</a></h3>
+              <p>Een kegelvormige tand met glanzend glazuur, uit de fosfaatlagen van Oued Zem.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer>
+    <div class="wrap footer-raster">
+      <div>
+        <h3>Viktors Fossielenkast</h3>
+        <p class="klein">
+          Een persoonlijke verzameling fossielen, mineralen en natuurhistorische stukken.
+          Determinaties zijn naar best vermogen; waar iets onzeker is, staat dat erbij.
+        </p>
+      </div>
+      <div>
+        <a href="collectie.html">Collectie</a>
+        <a href="tandenplaat.html">Tandenplaat</a>
+        <a href="eigen-vondsten.html">Eigen vondsten</a>
+      </div>
+      <div>
+        <a href="tijdlijn.html">Tijdlijn</a>
+        <a href="beurzen.html">Beurzen</a>
+        <a href="over-mij.html">Over mij</a>
+        <a href="over.html">Bronnen</a>
+        <p class="klein">© 2026 Viktor</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lichtbak voor vergrote foto's -->
+  <dialog id="lichtbak" aria-label="Vergrote foto">
+    <img src="" alt="">
+    <button class="knop">Sluiten ✕</button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
