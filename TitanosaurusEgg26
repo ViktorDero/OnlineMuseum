@@ -40,13 +40,13 @@
 
     <!-- ===== GROTE SFEERFOTO MET TITEL ===== -->
     <section class="hero klein-hero laag">
-      <img src="images/sfeer/enchodusW2.jpg" alt="Titanosaurus Ei">
+      <img src="images/sfeer/TitanoSf.jpg" alt="Titanosaurus Ei">
       <div class="wrap">
         <div class="kruimel"><a href="index.html">Home</a> / <a href="collectie.html">Collectie</a> / Titanosaurus</div>
         <span class="label">Fossielen</span>
         <h1>Titanosaurus ei</h1>
         <p>
-          Kleine eierschaal fragmenten van een Titanosaurus.
+          Kleine eierschaalfragmenten van een Titanosaurus.
         </p>
       </div>
     </section>
@@ -57,14 +57,14 @@
 
         <!-- Foto's: klik om te vergroten -->
         <div class="galerij">
-          <div class="hoofd zoom"><img src="images/objecten/enchodTand.jpg" alt="Titanosaurus Ei"></div>
+          <div class="hoofd zoom"><img src="images/objecten/TitanosaurusEi1.jpg" alt="Titanosaurus Ei"></div>
         </div>
 
         <!-- Tekst over het stuk -->
         <article>
           <dl class="feiten">
-            <div><dt>Materiaal</dt><dd>Kleine eierschaal fragmenten van een Titanosaurus</dd></div>
-            <div><dt>Herkomst</dt><dd>Mèze, departement Hérault, Frankrijk</dd></div>
+            <div><dt>Materiaal</dt><dd>Kleine eierschaalfragmenten van een Titanosaurus</dd></div>
+            <div><dt>Herkomst</dt><dd>Mèze, département Hérault, Frankrijk</dd></div>
             <div><dt>Ouderdom</dt><dd>Boven-Krijt 72 miljoen jaar geleden</dd></div>
           </dl>
 
